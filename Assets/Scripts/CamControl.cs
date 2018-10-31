@@ -14,8 +14,6 @@ public class CamControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.rotation = Quaternion.Lerp(this.transform.rotation, player.transform.rotation, delay);
 		this.transform.position = Vector3.Lerp(this.transform.position, player.transform.position - Vector3.forward * 10.0f + player.up * offset, delay);
-		
 	}
 }
