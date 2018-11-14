@@ -15,11 +15,13 @@ public class Motor : MonoBehaviour {
 	private Rigidbody2D rigid;
 	private Animator anim;
 
+
 	// Use this for initialization
 	void Start () {
 		rigid = GetComponent<Rigidbody2D>();
 		anim = GetComponentInChildren<Animator>();
 		trans = GetComponent<Transform>();
+		
 	}
 	
 	// Update is called once per frame

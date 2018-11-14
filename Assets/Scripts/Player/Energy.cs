@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Energy : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class Energy : MonoBehaviour {
 	private float maxEnergy;
 	[SerializeField]
 	private float deltaEnergy;
+	public Image eBar;
 	
 	[SerializeField]
 	private Ship ship;
@@ -25,7 +27,7 @@ public class Energy : MonoBehaviour {
 			DecreaseEnergy(deltaEnergy * Time.deltaTime);
 		}
 		Debug.Log(currentEnergy);
-
+		eBar.fillAmount = currentEnergy/maxEnergy;
 
 	}
 	public void AddEnergy(float e){
