@@ -1,0 +1,384 @@
+fileFormatVersion: 2
+guid: 2d857432336bb344b8983c1d7e87c708
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cromossomos_0
+    21300002: cromossomos_1
+    21300004: cromossomos_2
+    21300006: cromossomos_3
+    21300008: cromossomos_4
+    21300010: cromossomos_5
+    21300012: cromossomos_6
+    21300014: cromossomos_7
+    21300016: cro1
+    21300018: cromossomos_8
+    21300020: cromossomos_9
+    21300022: cromossomos_10
+    21300024: cromossomos_11
+    21300026: cromossomos_12
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cromossomos_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 3063
+        width: 263
+        height: 797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebf82bf113647941a151fe59f89eda3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_1
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 3062
+        width: 188
+        height: 785
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ef113dc4bf0ef44b2ba7a65148adc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 3757
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d69e3ac52769b040abfa39580fe5e6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_3
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 3038
+        width: 282
+        height: 871
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19dae21d7d39aea4b99c7eb651bf5f82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 2515
+        width: 144
+        height: 144
+      alignment: 9
+      pivot: {x: 0.54597324, y: 0.84074235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2691133248a340540bc90a7ba8d2372a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_5
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 2510
+        width: 142
+        height: 144
+      alignment: 9
+      pivot: {x: 0.56490374, y: 0.8380485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2df2eea73e4cbc47b4f603a20d62edd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_6
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 2506
+        width: 144
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5486785, y: 0.8459867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00e7d4aa40392f4eac932b2d65c168d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_7
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2519
+        width: 144
+        height: 144
+      alignment: 9
+      pivot: {x: 0.64223003, y: 0.8429025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15d6a36d31d19a41818c8783b5890ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_8
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 2170
+        width: 8
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46763c59ff2a90f469bf4f7005ebe1cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_9
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2186
+        width: 143
+        height: 328
+      alignment: 9
+      pivot: {x: 0.4999998, y: 0.9834893}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dc0f727e935954caaeedcceffee9a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_10
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2183
+        width: 143
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9891774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb89a7aad03d094b9ffe9128d8e91ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_11
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2179
+        width: 143
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9948656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf437b76ddfb23243800bbe664bf503c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cromossomos_12
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 2191
+        width: 143
+        height: 328
+      alignment: 9
+      pivot: {x: 0.51304615, y: 0.9834893}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e627f37272f0c46886023176085b8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 964628b6d014cec44bc01799643219a0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
