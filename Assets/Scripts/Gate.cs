@@ -17,7 +17,6 @@ public class Gate : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		Debug.Log("colidiu");
 		if(col.gameObject.tag == "Player"){
 			if(Mathf.Abs(Vector3.Angle(col.transform.up, this.transform.up)) <= 90.0f){
 				forwardArea.addPlayer(col.gameObject);
