@@ -37,7 +37,7 @@ public class Energy : MonoBehaviour {
 		}
 	}
 
-	private void DecreaseEnergy(float e){
+	public void DecreaseEnergy(float e){
 		currentEnergy -= e;
 		if(currentEnergy <= 0){
 			currentEnergy = 0;

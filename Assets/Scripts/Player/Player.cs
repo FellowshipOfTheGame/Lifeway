@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : Ship {
-		public ParticleSystem particles;
+
 
 
 	// Use this for initialization
@@ -30,16 +30,13 @@ public class Player : Ship {
 		if(Input.GetButtonDown("Fire1")){
 			motor = true;
 			PS.TurnOnMotor();
-			particles.Play();
-			ParticleSystem.MainModule aux = particles.main;
-			aux.loop = true;
+			PA.ActivateParticles();
+			
 		}
 		if(Input.GetButtonUp("Fire1")){
 			motor = false;
 			PS.TurnOffMotor();
-			ParticleSystem.MainModule aux = particles.main;
-			particles.Stop();
-			aux.loop = false;
+			PA.DeactivateParticles();
 		}
 	}
 }

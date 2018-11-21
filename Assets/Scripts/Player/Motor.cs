@@ -11,30 +11,35 @@ public class Motor : MonoBehaviour {
 	private Camera cam;
 	public float speed;
 	private float boost;
+	[SerializeField]
 	private Transform trans;
+	[SerializeField]
 	private Rigidbody2D rigid;
-	private Animator anim;
+	private bool hit;
+	[SerializeField]
+	private Energy energy;
+	[SerializeField]
+	private PlayerAnimation PA;
 
 
 	// Use this for initialization
 	void Start () {
-		rigid = GetComponent<Rigidbody2D>();
-		anim = GetComponentInChildren<Animator>();
-		trans = GetComponent<Transform>();
-		
+		hit = false;		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-		if(ship.motor){
-			Rotation();
+		if(!hit){
+			if(ship.motor){
+				Rotation();
+			}
+			else{
+				StaticRotation();
+			}
+			Movement();
 		}
-		else{
-			StaticRotation();
-		}
-		Movement();
-		Animador();
+		PA.Animador(rigid.velocity.magnitude);
 	}
 	private void Movement(){
 		Vector2 new_speed;
@@ -61,9 +66,15 @@ public class Motor : MonoBehaviour {
 			trans.rotation =  Quaternion.Slerp(trans.rotation, Quaternion.AngleAxis(angle, Vector3.forward), 0.2f);
 		}
 	}
-
-	private void Animador(){
-		anim.SetFloat("velocity_tale", rigid.velocity.magnitude);
-	}
 	
+	public void KnockBack(float e) {
+		hit = true;
+		Invoke("CanMove", 0.11f);
+		energy.DecreaseEnergy(e);
+	}
+
+	private void CanMove(){
+		hit = false;
+	}
+
 }
