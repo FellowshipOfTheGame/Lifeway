@@ -11,6 +11,8 @@ public class Ship : MonoBehaviour {
 	public bool energized;
 	[SerializeField]
 	protected PlayerSound PS;
+	[SerializeField]
+	protected PlayerAnimation PA;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +28,7 @@ public class Ship : MonoBehaviour {
 		energized = false;
 		motor = false;
 		PS.MotorDie();
+		PA.Die();
 	}
 	
 
