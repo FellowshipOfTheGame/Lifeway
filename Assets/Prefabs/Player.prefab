@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 114908099410569174}
   - component: {fileID: 114593630481279340}
   - component: {fileID: 82016426348617218}
+  - component: {fileID: 114504551776079872}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -128,7 +129,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &70209244588197762
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -137,7 +138,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1648202090268132}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6e63f6ec25a8f7d4ea606d5051b93552, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -287,6 +288,21 @@ MonoBehaviour:
   energized: 1
   PS: {fileID: 114593630481279340}
   particles: {fileID: 198526306503718406}
+--- !u!114 &114504551776079872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648202090268132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e22fe5c3f0c6fbf488ddea65e2192124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDrill: 0
+  step: 5
+  ship: {fileID: 114041020892449412}
+  ovulus: {fileID: 0}
 --- !u!114 &114593630481279340
 MonoBehaviour:
   m_ObjectHideFlags: 1
