@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Tests/test_michelle.unity
+- path: Assets/Scenes/Tests/PAULO.unity
   isLoaded: 1
   isActive: 1
