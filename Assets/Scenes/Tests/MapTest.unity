@@ -313,6 +313,32 @@ Transform:
   m_Father: {fileID: 2036770432}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &655803065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1648202090268132, guid: 08cb4125ee1d03746932d7959b9c7656,
+    type: 2}
+  m_PrefabInternal: {fileID: 1875450494}
+--- !u!114 &655803070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114331376693868832, guid: 08cb4125ee1d03746932d7959b9c7656,
+    type: 2}
+  m_PrefabInternal: {fileID: 1875450494}
+  m_Script: {fileID: 11500000, guid: 245ef380421cb7c418506cb7162d680d, type: 3}
+--- !u!114 &655803075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655803065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e22fe5c3f0c6fbf488ddea65e2192124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDrill: 0
+  step: 7
+  ship: {fileID: 655803070}
+  ovulus: {fileID: 726522964}
 --- !u!114 &726522964 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114446432141774130, guid: 971d9bc665330fd4eb2f8cf1cc633c0f,

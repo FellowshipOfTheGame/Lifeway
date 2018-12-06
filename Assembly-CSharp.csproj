@@ -53,7 +53,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Area.cs" />
+     <Compile Include="Assets\Scripts\Barrier_.cs" />
+     <Compile Include="Assets\Scripts\CamControl.cs" />
+     <Compile Include="Assets\Scripts\Drill.cs" />
+     <Compile Include="Assets\Scripts\Gate.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\Menu\MenuManager.cs" />
+     <Compile Include="Assets\Scripts\Menu\MenuStart.cs" />
+     <Compile Include="Assets\Scripts\Ovulus.cs" />
      <Compile Include="Assets\Scripts\Player\Barrier.cs" />
      <Compile Include="Assets\Scripts\Player\Energy.cs" />
      <Compile Include="Assets\Scripts\Player\EnergyCapsule.cs" />
@@ -62,6 +70,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerSound.cs" />
      <Compile Include="Assets\Scripts\Player\Ship.cs" />
+     <Compile Include="Assets\Scripts\Steroid.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/miche/Desktop/Lifeway/Lifeway/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
