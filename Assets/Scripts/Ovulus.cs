@@ -7,7 +7,7 @@ public class Ovulus : Steroid {
 	Collider2D protection;
 	public int limit;
 	Ship winner = null;
-	public GameObject click, winnerText;
+	public GameObject click, winnerText, backButton;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +15,7 @@ public class Ovulus : Steroid {
 		protection = this.GetComponent<Collider2D>();
 		click.SetActive(false);
 		winnerText.SetActive(false);
+		backButton.SetActive(false);
 	}
 
 	public override void Break(GameObject player){
@@ -45,6 +46,7 @@ public class Ovulus : Steroid {
 			winnerText.SetActive(true);
 			click.SetActive(false);
 			Debug.Log("WINNER!!!");
+			backButton.SetActive(true);
 		}
 	}
 

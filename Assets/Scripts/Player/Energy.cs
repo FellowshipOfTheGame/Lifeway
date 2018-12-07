@@ -14,11 +14,13 @@ public class Energy : MonoBehaviour {
 	
 	[SerializeField]
 	private Ship ship;
+	public GameObject loserText, backButton;
 
 	// Use this for initialization
 	void Start () {
 		currentEnergy = maxEnergy;
-
+		loserText.SetActive(false);
+		backButton.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -26,7 +28,7 @@ public class Energy : MonoBehaviour {
 		if(ship.motor){
 			DecreaseEnergy(deltaEnergy * Time.deltaTime);
 		}
-		Debug.Log(currentEnergy);
+		//Debug.Log(currentEnergy);
 		eBar.fillAmount = currentEnergy/maxEnergy;
 
 	}
@@ -41,6 +43,9 @@ public class Energy : MonoBehaviour {
 		currentEnergy -= e;
 		if(currentEnergy <= 0){
 			currentEnergy = 0;
+			loserText.SetActive(true);
+			backButton.SetActive(true);
+			Debug.Log("FALICEU");
 			ship.MotorDie();
 		}
 	}

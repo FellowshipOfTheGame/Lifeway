@@ -42,12 +42,13 @@ GameObject:
   - component: {fileID: 114041020892449412}
   - component: {fileID: 114033066918260208}
   - component: {fileID: 114908099410569174}
-  - component: {fileID: 114593630481279340}
   - component: {fileID: 114504551776079872}
+  - component: {fileID: 114419908375858528}
   - component: {fileID: 82016426348617218}
+  - component: {fileID: 114239963912606066}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,15 +90,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1648202090268132}
-  m_LocalRotation: {x: -0, y: 0.014132395, z: -0, w: 0.9999002}
-  m_LocalPosition: {x: 0.8, y: -0.06, z: -0.15}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 199.81514, y: -8.984443, z: -0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4775186217872286}
   - {fileID: 4022522044261108}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 1.6200001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4775186217872286
 Transform:
   m_ObjectHideFlags: 1
@@ -154,7 +155,8 @@ AudioSource:
   m_GameObject: {fileID: 1648202090268132}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: e8d4e1e664007c4459a6661f7da07698,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 2183a589374f67042a0986454f7986ce, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -271,7 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 95294242686045552}
-  particles: {fileID: 198526306503718406}
+  particles: {fileID: 0}
 --- !u!114 &114033066918260208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -283,13 +285,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f7b382b707c7d14e8f1657c191b9554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxEnergy: 100
+  deltaEnergy: 1
+  eBar: {fileID: 0}
   ship: {fileID: 114041020892449412}
-  cam: {fileID: 0}
-  speed: 10
-  trans: {fileID: 4461097963474176}
-  rigid: {fileID: 50667437107963356}
-  energy: {fileID: 114908099410569174}
-  PA: {fileID: 114021581448016942}
+  loserText: {fileID: 0}
+  backButton: {fileID: 0}
 --- !u!114 &114041020892449412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -304,7 +305,40 @@ MonoBehaviour:
   motor: 0
   direction: {x: 0, y: 0}
   energized: 1
-  PS: {fileID: 114593630481279340}
+  PS: {fileID: 114504551776079872}
+  PA: {fileID: 114021581448016942}
+--- !u!114 &114239963912606066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648202090268132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e22fe5c3f0c6fbf488ddea65e2192124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDrill: 0
+  step: 20
+  ship: {fileID: 114041020892449412}
+  ovulus: {fileID: 0}
+--- !u!114 &114419908375858528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648202090268132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb96009471bed643a0b9f13759c30fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ship: {fileID: 114041020892449412}
+  cam: {fileID: 0}
+  speed: 10
+  trans: {fileID: 4461097963474176}
+  rigid: {fileID: 50667437107963356}
+  energy: {fileID: 114033066918260208}
   PA: {fileID: 114021581448016942}
 --- !u!114 &114504551776079872
 MonoBehaviour:
@@ -315,22 +349,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6bd8435d72d520408427634d8424463, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AS: {fileID: 82016426348617218}
-  motorOn: {fileID: 8300000, guid: 2183a589374f67042a0986454f7986ce, type: 3}
-  motorTurnOn: {fileID: 8300000, guid: a1d200aa86e73ac40817256ce64abd68, type: 3}
-  motorTurnOff: {fileID: 8300000, guid: c494a06fb664c074db45e45461af92d2, type: 3}
-  motorDie: {fileID: 8300000, guid: 33090c490e5c64f449170f41dee36343, type: 3}
---- !u!114 &114419908375858528
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1648202090268132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fb96009471bed643a0b9f13759c30fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 82016426348617218}
