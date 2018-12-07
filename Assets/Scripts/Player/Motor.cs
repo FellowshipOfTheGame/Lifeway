@@ -11,6 +11,7 @@ public class Motor : MonoBehaviour {
 	private Camera cam;
 	public float speed;
 	private float boost;
+	private float flush;
 	[SerializeField]
 	private Transform trans;
 	[SerializeField]
@@ -24,7 +25,8 @@ public class Motor : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		hit = false;		
+		hit = false;
+		flush = 1f;		
 	}
 	
 	// Update is called once per frame
@@ -44,7 +46,7 @@ public class Motor : MonoBehaviour {
 	private void Movement(){
 		Vector2 new_speed;
 		if(ship.motor){
-	 		new_speed = speed * trans.up;
+	 		new_speed = speed * flush * trans.up;
 		}
 		else{
 			new_speed = Vector2.zero;
@@ -75,6 +77,14 @@ public class Motor : MonoBehaviour {
 
 	private void CanMove(){
 		hit = false;
+	}
+
+	public void GetSlowed(float newFlush){
+		flush = newFlush;
+	}
+
+	public void StopSlow(){
+		flush = 1f;
 	}
 
 }

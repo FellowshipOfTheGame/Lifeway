@@ -39,12 +39,12 @@ GameObject:
   - component: {fileID: 50667437107963356}
   - component: {fileID: 70209244588197762}
   - component: {fileID: 212155613869655190}
+  - component: {fileID: 114041020892449412}
+  - component: {fileID: 114033066918260208}
+  - component: {fileID: 114908099410569174}
+  - component: {fileID: 114593630481279340}
+  - component: {fileID: 114504551776079872}
   - component: {fileID: 82016426348617218}
-  - component: {fileID: 114331376693868832}
-  - component: {fileID: 114419908375858528}
-  - component: {fileID: 114014156181642656}
-  - component: {fileID: 114336410825995272}
-  - component: {fileID: 114978606911251418}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 4775186217872286}
   - component: {fileID: 212748021890297890}
   - component: {fileID: 95294242686045552}
+  - component: {fileID: 114021581448016942}
   m_Layer: 0
   m_Name: Tale
   m_TagString: Untagged
@@ -258,7 +259,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114014156181642656
+--- !u!114 &114021581448016942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1822309929226780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8db737b16f132547b5474baa1d04b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 95294242686045552}
+  particles: {fileID: 198526306503718406}
+--- !u!114 &114033066918260208
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,11 +283,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f7b382b707c7d14e8f1657c191b9554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEnergy: 100
-  deltaEnergy: 1
-  eBar: {fileID: 0}
-  ship: {fileID: 114331376693868832}
---- !u!114 &114331376693868832
+  ship: {fileID: 114041020892449412}
+  cam: {fileID: 0}
+  speed: 10
+  trans: {fileID: 4461097963474176}
+  rigid: {fileID: 50667437107963356}
+  energy: {fileID: 114908099410569174}
+  PA: {fileID: 114021581448016942}
+--- !u!114 &114041020892449412
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,9 +304,9 @@ MonoBehaviour:
   motor: 0
   direction: {x: 0, y: 0}
   energized: 1
-  PS: {fileID: 114336410825995272}
-  PA: {fileID: 114978606911251418}
---- !u!114 &114336410825995272
+  PS: {fileID: 114593630481279340}
+  PA: {fileID: 114021581448016942}
+--- !u!114 &114504551776079872
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -316,14 +333,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb96009471bed643a0b9f13759c30fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ship: {fileID: 114331376693868832}
-  cam: {fileID: 0}
-  speed: 10
-  trans: {fileID: 4461097963474176}
-  rigid: {fileID: 50667437107963356}
-  energy: {fileID: 114014156181642656}
-  PA: {fileID: 114978606911251418}
---- !u!114 &114978606911251418
+  AS: {fileID: 82016426348617218}
+  motorOn: {fileID: 8300000, guid: f9714d38dd9283a4297d8dae2d7ed158, type: 3}
+  motorTurnOn: {fileID: 8300000, guid: a1d200aa86e73ac40817256ce64abd68, type: 3}
+  motorTurnOff: {fileID: 8300000, guid: c494a06fb664c074db45e45461af92d2, type: 3}
+  motorDie: {fileID: 8300000, guid: 33090c490e5c64f449170f41dee36343, type: 3}
+--- !u!114 &114908099410569174
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4960,7 +4975,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300008, guid: 2d857432336bb344b8983c1d7e87c708, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5006,7 +5021,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300020, guid: 2d857432336bb344b8983c1d7e87c708, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
