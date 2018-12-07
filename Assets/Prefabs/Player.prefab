@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1648202090268132}
   m_LocalRotation: {x: -0, y: 0.014132395, z: -0, w: 0.9999002}
-  m_LocalPosition: {x: 6.215227, y: -0.6403551, z: -0.15}
+  m_LocalPosition: {x: 0.8, y: -0.06, z: -0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4775186217872286}
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1648202090268132}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e22fe5c3f0c6fbf488ddea65e2192124, type: 3}
   m_Name: 
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 82016426348617218}
-  motorOn: {fileID: 8300000, guid: 2183a589374f67042a0986454f7986ce, type: 3}
+  motorOn: {fileID: 8300000, guid: f9714d38dd9283a4297d8dae2d7ed158, type: 3}
   motorTurnOn: {fileID: 8300000, guid: a1d200aa86e73ac40817256ce64abd68, type: 3}
   motorTurnOff: {fileID: 8300000, guid: c494a06fb664c074db45e45461af92d2, type: 3}
   motorDie: {fileID: 8300000, guid: 33090c490e5c64f449170f41dee36343, type: 3}
