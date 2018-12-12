@@ -30,6 +30,10 @@ public class Ship : MonoBehaviour {
 		PS.MotorDie();
 		PA.Die();
 	}
+
+	public void Silence(){
+		PS.enabled = false;
+	}
 	
 
 }

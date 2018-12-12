@@ -6,27 +6,18 @@ public class EnergyCapsule : MonoBehaviour {
 
 	[SerializeField]
 	private float energy;
+	[SerializeField]
+	private AudioSource AS;
+	[SerializeField]
+	private SpriteRenderer SR;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-	/// <summary>
-	/// Sent when another object enters a trigger collider attached to this
-	/// object (2D physics only).
-	/// </summary>
-	/// <param name="other">The other Collider2D involved in this collision.</param>
 	void OnTriggerEnter2D(Collider2D other) {
 		Energy e = other.gameObject.GetComponent<Energy>();
 		if(e != null){ //checking if it is a ship
+			AS.Play();
 			e.AddEnergy(energy);
-			Destroy(gameObject);
+			SR.enabled = false;
+			Destroy(gameObject, AS.clip.length);
 		}
 	}
 }

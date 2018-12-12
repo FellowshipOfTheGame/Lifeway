@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Tests/test_michelle.unity
+- path: Assets/Scenes/Game/MainMenu.unity
   isLoaded: 1
   isActive: 1

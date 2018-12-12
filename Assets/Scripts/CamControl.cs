@@ -13,7 +13,7 @@ public class CamControl : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 		this.transform.position = Vector3.Lerp(this.transform.position, player.transform.position - Vector3.forward * 10.0f + player.up * offset, delay);
 	}
 }
