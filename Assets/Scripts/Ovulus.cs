@@ -28,6 +28,7 @@ public class Ovulus : Steroid {
 			Ship control = col.GetComponent<Ship>();
 			control.motor = false;
 			control.enabled = false;
+			control.Silence();
 			Debug.Log("DRILL!!!");
 			/* 
 			control.drill.ovulus = this;
