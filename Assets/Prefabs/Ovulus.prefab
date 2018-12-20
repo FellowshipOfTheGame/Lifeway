@@ -52,7 +52,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1130902431678756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 104.8, z: -1.40625}
+  m_LocalPosition: {x: 337.1074, y: 674.83203, z: -1.40625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4738220498706766}
@@ -116,6 +116,7 @@ MonoBehaviour:
   limit: 20
   click: {fileID: 0}
   winnerText: {fileID: 0}
+  backButton: {fileID: 0}
 --- !u!212 &212325589504490696
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -150,9 +151,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 5cb58c75052343c4fb4544d832b99ae9, type: 3}
-  m_Color: {r: 0.7735849, g: 0.41963333, b: 0.5574881, a: 1}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 8cd7be2a62b9ca24086d74e2d0be4c08, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
