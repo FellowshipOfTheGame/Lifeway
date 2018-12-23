@@ -59,10 +59,11 @@
      <Compile Include="Assets\Scripts\Drill.cs" />
      <Compile Include="Assets\Scripts\Gate.cs" />
      <Compile Include="Assets\Scripts\Hazards\SlowArea.cs" />
-     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\Menu\ConfigsMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\GoToMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\MenuManager.cs" />
      <Compile Include="Assets\Scripts\Menu\MenuStart.cs" />
+     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Ovulus.cs" />
      <Compile Include="Assets\Scripts\Player\Barrier.cs" />
      <Compile Include="Assets\Scripts\Player\Energy.cs" />
