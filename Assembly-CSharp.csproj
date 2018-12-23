@@ -65,6 +65,8 @@
      <Compile Include="Assets\Scripts\Areas\Area.cs" />
      <Compile Include="Assets\Scripts\Areas\Gate.cs" />
      <Compile Include="Assets\Scripts\Camera\CamControl.cs" />
+     <Compile Include="Assets\Scripts\Commander\CommanderTrigger.cs" />
+     <Compile Include="Assets\Scripts\Commander\LowEnergyTrigger.cs" />
      <Compile Include="Assets\Scripts\Energy Capsule\EnergyCapsule.cs" />
      <Compile Include="Assets\Scripts\Hazards\Barrier.cs" />
      <Compile Include="Assets\Scripts\Hazards\SlowArea.cs" />
@@ -73,6 +75,7 @@
      <Compile Include="Assets\Scripts\Ovulus\Barrier_.cs" />
      <Compile Include="Assets\Scripts\Ovulus\Ovulus.cs" />
      <Compile Include="Assets\Scripts\Ovulus\Steroid.cs" />
+     <Compile Include="Assets\Scripts\Ship\CommanderActivator.cs" />
      <Compile Include="Assets\Scripts\Ship\Drill.cs" />
      <Compile Include="Assets\Scripts\Ship\Energy.cs" />
      <Compile Include="Assets\Scripts\Ship\Motor.cs" />
