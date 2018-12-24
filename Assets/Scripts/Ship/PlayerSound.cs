@@ -41,6 +41,7 @@ public class PlayerSound : MonoBehaviour {
 		AS.clip = motorTurnOff;
 		AS.Play();
 		AS.loop = false;
+		
 	}
 
 	public void MotorDie(){
