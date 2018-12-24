@@ -389,7 +389,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - BackupLevel
+  - PAULO
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -652,11 +652,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Game
+    - Assets/Scenes/Tests
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Game
+  - Assets/Scenes/Tests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\miche\Desktop\Lifeway\Lifeway
   m_LockTracker:
@@ -693,7 +693,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c2a0000c42a0000f42a0000b22b0000982c0000c22c0000e82d00003e2e00009a2e0000d42e00008e2f0000e42f00002e3100005e310000
+    m_ExpandedIDs: 00000000402c0000b82c0000e82c00009c2d0000802e0000aa2e0000d02f00002630000082300000bc30000076310000cc3100001433000044330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
