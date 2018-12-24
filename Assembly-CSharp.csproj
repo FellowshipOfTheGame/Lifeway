@@ -70,8 +70,10 @@
      <Compile Include="Assets\Scripts\Energy Capsule\EnergyCapsule.cs" />
      <Compile Include="Assets\Scripts\Hazards\Barrier.cs" />
      <Compile Include="Assets\Scripts\Hazards\SlowArea.cs" />
+     <Compile Include="Assets\Scripts\Menu\ConfigsMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\GoToMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\MenuStart.cs" />
+     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Ovulus\Barrier_.cs" />
      <Compile Include="Assets\Scripts\Ovulus\Ovulus.cs" />
      <Compile Include="Assets\Scripts\Ovulus\Steroid.cs" />
