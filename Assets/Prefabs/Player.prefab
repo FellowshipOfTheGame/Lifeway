@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 114908099410569174}
   - component: {fileID: 114504551776079872}
   - component: {fileID: 114419908375858528}
+  - component: {fileID: 114957026777651980}
   - component: {fileID: 114239963912606066}
   - component: {fileID: 114376155380769546}
   - component: {fileID: 82016426348617218}
@@ -92,7 +93,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1648202090268132}
   m_LocalRotation: {x: -0, y: 0.014132395, z: -0, w: 0.9999002}
-  m_LocalPosition: {x: 6.215227, y: -0.6403551, z: -0.15}
+  m_LocalPosition: {x: 0.6, y: -1.1, z: -0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4775186217872286}
@@ -290,8 +291,6 @@ MonoBehaviour:
   deltaEnergy: 1
   eBar: {fileID: 0}
   ship: {fileID: 114041020892449412}
-  loserText: {fileID: 0}
-  backButton: {fileID: 0}
 --- !u!114 &114041020892449412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -335,6 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commanderAnimator: {fileID: 0}
+  commanderTextField: {fileID: 0}
 --- !u!114 &114419908375858528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -382,6 +382,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 95294242686045552}
   particles: {fileID: 198212230222246402}
+--- !u!114 &114957026777651980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648202090268132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f13ce1758c83fd4a9aa63a106a696fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostSpd: 40
+  turboSpd: 20
+  boostTime: 0.3
 --- !u!198 &198212230222246402
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class CommanderTrigger : MonoBehaviour {
 
 	[SerializeField] private CommanderActivator commanderActivator;
-	[SerializeField] private string text;
+	[SerializeField] protected string text;
 	private float _time;
 	[SerializeField] private float deltaTime;
 
