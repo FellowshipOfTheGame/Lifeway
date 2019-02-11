@@ -8,10 +8,7 @@ public class CamControl : MonoBehaviour {
     public float delay, offset;
 
 	bool follow = true;
-    // Use this for initialization
-    void Start () {
-		
-	}
+
 	
 	// Update is called once per frame
 	void LateUpdate () {

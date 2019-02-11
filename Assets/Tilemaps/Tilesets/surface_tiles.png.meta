@@ -50,18 +50,18 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
-    wrapW: -1
+    wrapU: 3
+    wrapV: 3
+    wrapW: 3
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 317
+  spritePixelsToUnits: 316
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,7 +77,7 @@ TextureImporter:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -88,7 +88,7 @@ TextureImporter:
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 1024
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -116,16 +116,16 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 951
-        width: 317
-        height: 317
+        width: 316
+        height: 316
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc4e1d546a5beb943b1451c8a573300c
+      spriteID: c34a872a4f3e09447a4676938b2ee5f7
       vertices: []
       indices: 
       edges: []
@@ -134,18 +134,18 @@ TextureImporter:
       name: surface_tiles_1
       rect:
         serializedVersion: 2
-        x: 317
+        x: 318
         y: 951
-        width: 317
-        height: 317
+        width: 316
+        height: 316
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f849de882da6c81448090af49bd5e769
+      spriteID: b6994faeda3f2524cbc6cebcc23a66f5
       vertices: []
       indices: 
       edges: []
@@ -159,13 +159,13 @@ TextureImporter:
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce6e09d5e1f9f341b5a655673662424
+      spriteID: 983f7f7a2fa025b4f94fb862d317e2e0
       vertices: []
       indices: 
       edges: []
@@ -179,13 +179,13 @@ TextureImporter:
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07974018dd5b0dd4a8d544e5abde3acb
+      spriteID: e9fea19932e1ca04389f6920ca5fb2a3
       vertices: []
       indices: 
       edges: []
@@ -195,17 +195,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 634
+        y: 636
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fcfdfd1330096545aef9f205120ccee
+      spriteID: 0918f1e125c2f1d4e80d29fbb909e7ae
       vertices: []
       indices: 
       edges: []
@@ -214,18 +214,18 @@ TextureImporter:
       name: surface_tiles_5
       rect:
         serializedVersion: 2
-        x: 317
+        x: 319
         y: 634
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6046be3587219b44eb33331fb14286ff
+      spriteID: e10ff9858c743e742825e53591771ea7
       vertices: []
       indices: 
       edges: []
@@ -239,13 +239,13 @@ TextureImporter:
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd1232b32068ecc4aa4a520a323cc814
+      spriteID: 3cd8c5592ad77304dab460d75f6a900c
       vertices: []
       indices: 
       edges: []
@@ -259,13 +259,13 @@ TextureImporter:
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e891b906204e164eac41851e9d7f852
+      spriteID: 0be849d3d7172a04b90a4441cb7ff760
       vertices: []
       indices: 
       edges: []
@@ -279,13 +279,13 @@ TextureImporter:
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa5357874b715324abc91ed028c52ea3
+      spriteID: 9dfaf07b9bfb8f4429ae7de3725ece92
       vertices: []
       indices: 
       edges: []
@@ -294,18 +294,18 @@ TextureImporter:
       name: surface_tiles_9
       rect:
         serializedVersion: 2
-        x: 317
+        x: 319
         y: 317
-        width: 317
-        height: 317
+        width: 316
+        height: 316
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f191f82a532d854419945b41b6f95c69
+      spriteID: 98f48593000c44e469a2bb57e3dd5a11
       vertices: []
       indices: 
       edges: []
@@ -319,13 +319,13 @@ TextureImporter:
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b3ed72e4064ab14ba4699f67b5c0460
+      spriteID: 8348f3e180ec4684b9505276b29ce2ef
       vertices: []
       indices: 
       edges: []
@@ -339,13 +339,13 @@ TextureImporter:
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 987512ff9fa1c774788eb6d14a9aa694
+      spriteID: 3434afb47efb0634b8c63c1e2addadc1
       vertices: []
       indices: 
       edges: []
@@ -359,13 +359,13 @@ TextureImporter:
         width: 317
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69702e60e1be4224cbb9e30458ffb9e6
+      spriteID: ae789da9905e06a4db4c71470dd08556
       vertices: []
       indices: 
       edges: []
@@ -376,56 +376,16 @@ TextureImporter:
         serializedVersion: 2
         x: 317
         y: 0
-        width: 317
-        height: 317
+        width: 316
+        height: 316
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3b4c9e7ac487f34db02111b1bc857ca
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: surface_tiles_14
-      rect:
-        serializedVersion: 2
-        x: 634
-        y: 0
-        width: 317
-        height: 317
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea49e4f6c1250af4986d3caeb14aea33
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: surface_tiles_15
-      rect:
-        serializedVersion: 2
-        x: 951
-        y: 0
-        width: 317
-        height: 317
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47c73debbbb77654aa89bb169825be6f
+      spriteID: b2055835f8ca5104cbc9e9e768fd2c4e
       vertices: []
       indices: 
       edges: []
