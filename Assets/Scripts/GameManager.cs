@@ -9,10 +9,13 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance;
 
 	public GameObject gameOverScr;
-
 	public LowEnergyTrigger energyTgr;
 	public CamControl cam;
 	public TextMeshProUGUI gameOverText;
+
+	public Area firstArea;
+
+
 
 	void Awake (){
 		if(instance == null)
