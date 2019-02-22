@@ -7,31 +7,28 @@ public class Gate : MonoBehaviour {
 	public Area backArea, forwardArea;
 
 	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void Awake () {
+		backArea.gates.Add(this);
+		forwardArea.gates.Add(this);
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
 		if(col.gameObject.tag == "Player"){
 			if(Mathf.Abs(Vector3.Angle(col.transform.up, this.transform.up)) <= 90.0f){
-				forwardArea.addPlayer(col.gameObject);
+				forwardArea.addPlayer(col.gameObject, this);
 			}else{
-				backArea.addPlayer(col.gameObject);
+				backArea.addPlayer(col.gameObject, this);
 			}
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D col){
+		Debug.Log("Vanish");
 		if(col.gameObject.tag == "Player"){
 			if(Mathf.Abs(Vector3.Angle(col.transform.up, this.transform.up)) <= 90.0f){
-				backArea.removePlayer(col.gameObject);
+				backArea.removePlayer(col.gameObject, this);
 			}else{
-				forwardArea.removePlayer(col.gameObject);
+				forwardArea.removePlayer(col.gameObject, this);
 			}
 		}
 	}

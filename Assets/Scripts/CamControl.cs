@@ -7,13 +7,16 @@ public class CamControl : MonoBehaviour {
 	public Transform player;
     public float delay, offset;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
+	bool follow = true;
+
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		this.transform.position = Vector3.Lerp(this.transform.position, player.transform.position - Vector3.forward * 10.0f + player.up * offset, delay);
+		if(follow)
+			this.transform.position = Vector3.Lerp(this.transform.position, player.transform.position - Vector3.forward * 10.0f + player.up * offset, delay);
+	}
+
+	public void Freeze(){
+		follow = false;
 	}
 }
